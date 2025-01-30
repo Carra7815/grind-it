@@ -1,15 +1,14 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="mr-3 flex h-screen w-1/4 flex-row">
+    <nav className="flex h-screen max-w-80 grow flex-row rounded-lg bg-secondary">
       <div className="mx-auto flex flex-col items-center justify-between p-3">
-        <Link to="/" className="font-dongle text-3xl">
+        <Link to="/" className="rounded bg-tertiary px-2 font-dongle text-3xl">
           GRIND IT
         </Link>
       </div>
-      <div className="border-quaternary my-10 border-r" />
+      <div className="my-10 w-1 rounded bg-quaternary" />
     </nav>
   );
 }

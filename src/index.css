@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,5 +7,17 @@
 @layer base {
   body {
     @apply bg-primary text-quaternary;
+  }
+
+  h1 {
+    @apply mb-4 text-3xl font-bold;
+  }
+
+  h2 {
+    @apply mb-4 text-xl font-bold;
+  }
+
+  p {
+    @apply mb-4 text-lg;
   }
 }

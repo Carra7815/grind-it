@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
+// import defaultTheme from "tailwindcss/defaultTheme";
+import ariaComponents from "tailwindcss-react-aria-components";
 import colors from "./src/data/colors.js";
 
 export default {
@@ -16,5 +17,5 @@ export default {
       dongle: ["Dongle", "sans-serif"],
     },
   },
-  plugins: [require("tailwindcss-react-aria-components")],
+  plugins: [ariaComponents],
 };
